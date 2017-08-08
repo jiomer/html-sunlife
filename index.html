@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>SunLife</title>
+		<link type="image/vnd.microsoft.icon" href="./img/favicon.png" rel="shortcut icon">
+		<link rel="stylesheet" href="css/style.css" />
+		<script type="text/javascript" src="js/jquery-1.11.1.min.js" ></script>
+		<script type="text/javascript" src="js/canvas.js" ></script>
+		<script type="text/javascript" src="js/script.js" ></script>
+	</head>
+
+	<body>
+		<div class="bodycontent">
+			<header class="header" id="fix">
+				<!--页头 -->
+				<div class="logonav">
+					<div class="logo">
+						<div class="logogravatar">
+							<a href="#" title="双击导航条空白地方即可返回顶部">
+								<div class="blogname">Sun<span class="names">Life</span></div>
+							</a>
+						</div>
+					</div>
+					<nav id="top-nav" class="winfo">
+						<ul>
+							<li>
+								<a href="./index.html">首页</a>
+							</li>
+							<li>
+								<a href="./about.html" target="_blank">关于</a>
+							</li>
+							<li>
+								<a href="./archives.html">归档</a>
+							</li>
+						</ul>
+					</nav>
+					<!--<div class="search">
+						<form action="index.html" method="post">
+							<input type="search" required="required" placeholder="SunLife" />
+							<button type="submit" id="searchsubmit">Search</button>
+						</form>
+					</div>-->
+				</div>
+			</header>
+			<div class="clear"></div>
+			<div class="midd">
+				<!--这个位置预留为benner!-->
+				<div class="benner" id="benner">
+					<canvas id="paopao">
+						你的浏览器不支持我这个贼鸡巴恶心的canvas喔！请升级你的浏览器吧。
+					</canvas>
+				</div>
+				<section class="container">
+					<article class="post-list">
+						<div class="thumbnail">
+							<a href="./page1.html"><img src="img/img2.jpg" /></a>
+						</div> 
+						<div class="info">
+							<h2 class="title"><a href="./page1.html">this</a></h2>
+							<span class="time">05月25日</span>
+							<span class="comment">暂无评论</span>
+							<p>冷漠多了,自然就不想在乎了...</p>
+						</div>
+					</article>
+					<article class="post-list">
+						<div class="thumbnail">
+							<a href="./page2.html"><img src="img/img3.jpg" /></a>
+						</div> 
+						<div class="info">
+							<h2 class="title"><a href="./page2.html">CSS一段文本超过设置省略号显示</a></h2>
+							<span class="time">05月25日</span>
+							<span class="comment">暂无评论</span>
+							<p>
+								如:
+							.li { overflow:hidden;text-overflow:ellipsis; -o-text-overflow:ellipsis;white-space:nowrap;width:100%;}
+							</p>
+						</div>
+					</article>
+					<article class="post-list">
+						<div class="thumbnail">
+							<a href="./page3.html"><img src="img/img4.jpg" /></a>
+						</div> 
+						<div class="info">
+							<h2 class="title"><a href="./page3.html">单列模式</a></h2>
+							<span class="time">05月25日</span>
+							<span class="comment">暂无评论</span>
+							<p>
+							在任何地方，任何时候都只能获取某种类型(class)的同一个实例。
+							即无论怎么取得的实例均为同一个实例。
+							</p>
+						</div>
+					</article>
+					<article class="post-list">
+						<div class="thumbnail">
+							<a href="./page1.html"><img src="img/img5.jpg" /></a>
+						</div> 
+						<div class="info">
+							<h2 class="title"><a href="./page1.html">this</a></h2>
+							<span class="time">05月25日</span>
+							<span class="comment">暂无评论</span>
+							<p>冷漠多了,自然就不想在乎了...</p>
+						</div>
+					</article>
+					<article class="post-list">
+						<div class="thumbnail">
+							<a href="./page2.html"><img src="img/img6.jpg" /></a>
+						</div> 
+						<div class="info">
+							<h2 class="title"><a href="./page2.html">CSS一段文本超过设置省略号显示</a></h2>
+							<span class="time">05月25日</span>
+							<span class="comment">暂无评论</span>
+							<p>
+								如:
+							.li { overflow:hidden;text-overflow:ellipsis; -o-text-overflow:ellipsis;white-space:nowrap;width:100%;}
+							</p>
+						</div>
+					</article>
+					<article class="post-list">
+						<div class="thumbnail">
+							<a href="./page3.html"><img src="img/img7.jpg" /></a>
+						</div> 
+						<div class="info">
+							<h2 class="title"><a href="./page3.html">单列模式</a></h2>
+							<span class="time">05月25日</span>
+							<span class="comment">暂无评论</span>
+							<p>
+							在任何地方，任何时候都只能获取某种类型(class)的同一个实例。
+							即无论怎么取得的实例均为同一个实例。
+							</p>
+						</div>
+					</article>
+				</section>
+			</div>
+				<nav class="reade_more">
+                    <a href="./archives.html">Reade more...</a>
+                </nav>
+			<footer>
+					<div class="foote">	
+					&copy;2017 SunLife. All Rights Reserved. Theme by <a href="http://199604.com" target="_blank">Guoliangjun</a> Design
+					</div>
+			</footer>
+		</div>
+		<div id="share">
+			<a id="totop" title="返回顶部">返回顶部</a>
+			<a href="http://weibo.com/jiomer" target="_blank" class="sina">关注新浪微博</a>
+			<a href="http://199604.com"  target="_blank" class="tencent" title="记忆角落">记忆角落</a>
+		</div>
+	</body>
+
+</html>

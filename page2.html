@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>this - SunLife</title>
+		<link type="image/vnd.microsoft.icon" href="./img/favicon.png" rel="shortcut icon">
+		<link rel="stylesheet" href="css/style.css" />
+		<script type="text/javascript" src="js/jquery-1.11.1.min.js" ></script>
+		<script type="text/javascript" src="js/script.js" ></script>
+	</head>
+
+	<body>
+		<div class="bodycontent">
+			<header class="header" id="fix">
+				<!--页头 -->
+				<div class="logonav">
+					<div class="logo">
+						<div class="logogravatar">
+							<a href="./index.html" title="双击导航条空白地方即可返回顶部">
+								<div class="blogname">Sun<span class="names">Life</span></div>
+							</a>
+						</div>
+					</div>
+					<nav id="top-nav" class="winfo">
+						<ul>
+							<li>
+								<a href="./index.html">首页</a>
+							</li>
+							<li>
+								<a href="./about.html" target="_blank">关于</a>
+							</li>
+							<li>
+								<a href="./archives.html">归档</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</header>
+			<div class="clear"></div>
+			<div class="midd">
+				<section class="page">
+					<h2 class="single-title"><a href="#">CSS一段文本超过设置省略号显示</a></h2>
+					<div class="views">
+						<time datetime="2017-02-28 23:29"> 发布于 1 天前</time> - 110 次检阅
+					</div>
+					<article class="single">
+						<p>通常的做法是这样的：</p>
+						<pre>
+							<code>
+							1.overflow:hidden;
+							2.text-overflow:ellipsis;
+							3.-o-text-overflow:ellipsis;
+							4.white-space:nowrap;
+							5.width:100%;
+							</code>
+						</pre>
+						<p>如:
+							.li { overflow:hidden;text-overflow:ellipsis; -o-text-overflow:ellipsis;white-space:nowrap;width:100%;}  						
+						</p>
+						<blockquote>
+						<ol>
+							<li>
+								<p>white-space：nowrap;表示文本不会换行，在同一行继续，知道遇到<,br,>标签为止；</p>
+							</li>
+							<li>
+								<p>overflow：hidden;不显示超过对象尺寸的内容，就是把超出的部分隐藏了；</p>
+							</li>
+							<li>
+								<p>text-overflow：ellipsis;当文本对象溢出是显示...，当然也可是设置属性为clip不显示点点点；</p>
+							</li>
+							<li>
+								<p>-o-text-overflow: ellipsis针对Opera；而宽度的设定主要是针对IE6；</p>
+							</li>
+							<li>
+								<p>该方法支持Internet Explorer, Safari, Chrome 和 Opera，但FF并不支持，不过可以通过Jquery来实现类似的效果。</p>
+							</li>
+						</ol>
+						</blockquote>
+						
+						
+					</article>
+				</section>
+				<section class="comments">
+					<div class="container">
+						<h3 class="comment-title">这里是用来显示有多少条评论的...</h3>
+						<ol class="commentlist">
+							<li class="comment depth-1">
+									<div class="comment-body">
+										<div class="comment-author">
+											<img src="img/gravatar.jpg" class="avatar">
+											<cite>
+												<a href="#" target="_blank">SunLife</a>
+											</cite>
+											<time>14小时前</time>
+											<span class="says">说道：</span>	
+											<a class="comment-reply-link">回复</a>
+										</div>
+										<p>老师记得给我及格...</p>
+										<!--<div class="reply">
+											<a class="comment-reply-link">回复</a>
+										</div>-->
+									</div>
+									<div class="comment-body">
+										<div class="children">
+											<img src="img/gravatar1.jpg" class="avatar-32">
+											<cite>
+												<a href="#" target="_blank">隔壁老王</a>
+											</cite>
+											<time>14小时前</time>
+											<span class="says">说道：</span>	
+											<a class="comment-reply-link">回复</a>
+										</div>
+										<p>对啊对啊</p>
+									</div>
+							</li>
+						</ol>
+					</div>
+				</section>
+				<section id="respond">
+					<div class="container">
+						<h3>发表评论</h3>
+						<form action="index.html" method="post" id="commentform">
+							<p class="comment-notes">
+								<span>电子邮件地址不会被公开。</span> 必填项已用<span class="required">*</span>标注
+							</p>
+							<p class="comment-form-author">
+								<label for="author">姓名 <span class="required">*</span></label> 
+								<input id="author" name="author" type="text"size="30" maxlength="245" required="required" placeholder="郭良俊">
+							</p>
+							<p class="comment-form-email">
+								<label for="email">电子邮件 <span class="required">*</span></label> 
+								<input id="email" name="email" type="text" size="30" maxlength="100" required="required" placeholder="admin@199604.com">
+							</p>
+							<p class="comment-form-url">
+								<label for="url">站点</label> 
+								<input id="url" name="url" type="text" size="30" maxlength="200" placeholder="http://199604.com">
+							</p>
+							<p class="comment-form-comment">
+								<label for="comment">评论</label> 
+								<textarea id="comment" name="comment" cols="45" rows="8" maxlength="65525" required="required"></textarea>
+							</p>
+							<p class="form-submit">
+								<input name="submit" type="submit" id="submit" class="submit" value="发表评论">
+							</p>
+						</form>
+					</div>
+				</section>
+			</div>
+			<div class="clear"></div>
+			<footer>
+					<div class="foote">	
+					&copy;2017 SunLife. All Rights Reserved. Theme by <a href="http://199604.com" target="_blank">Guoliangjun</a> Design
+					</div>
+			</footer>
+		</div>
+		<div id="share">
+			<a id="totop" title="返回顶部">返回顶部</a>
+			<a href="http://weibo.com/jiomer" target="_blank" class="sina">关注新浪微博</a>
+			<a href="http://199604.com"  target="_blank" class="tencent" title="记忆角落">记忆角落</a>
+		</div>
+	</body>
+
+</html>
